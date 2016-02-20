@@ -187,3 +187,137 @@ function equalArrays(a, b){
 	}
 	return true;
 }
+
+console.log(10 + 'objects');
+console.log('7' + '4');
+var n = 1 - 'x';
+console.log(n);
+console.log(n + 'objects');
+
+console.log(null == undefined);
+console.log('0' == 0);
+console.log(0 == false);
+console.log('0' == false);
+
+console.log(Number('3'));
+console.log(String(false));
+console.log(Boolean([]));
+console.log(Object(3));
+
+var n = 17;
+binary_string = n.toString(2);
+octal_string = '0' + n.toString(8);
+hex_string = '0x' + n.toString(16);
+
+var n = 123456.789;
+console.log(n.toFixed(0));
+console.log(n.toFixed(2));
+console.log(n.toFixed(5));
+console.log(n.toExponential(1));
+console.log(n.toExponential(3));
+console.log(n.toPrecision(4));
+console.log(n.toPrecision(7));
+console.log(n.toPrecision(10));
+
+console.log(parseInt('3 blind mice'));
+console.log(parseFloat(' 3.14 meter'));
+console.log(parseInt('-12.34'));
+console.log(parseInt('0xFF'));
+console.log(parseInt('oxff'));
+console.log(parseFloat('.1'));
+console.log(parseInt('0.1'));
+console.log(parseInt('.1'));
+console.log(parseFloat('$72.47'));
+
+console.log(parseInt('11', 2));
+console.log(parseInt('ff', 16));
+console.log(parseInt('zz', 36));
+console.log(parseInt('077', 8));
+console.log(parseInt('077', 10));
+
+console.log([1, 2, 3].toString());
+console.log((function(x){ f(x); }).toString());
+console.log(/\d+/g.toString());
+console.log(new Date(2010, 0, 1).toString());
+
+var d = new Date(2010, 0, 1);
+console.log(d.valueOf());
+
+var now = new Date();
+console.log(typeof(now + 1));
+console.log(typeof(now - 1));
+console.log(now == now.toString());
+console.log(now > (now - 1));
+
+var i;
+var sum;
+var i, sum;
+var message = 'hello';
+var i = 0, j = 0, k = 0;
+
+for(var i = 0; i < 10; i++){
+	console.log(i);
+}
+for(var i = 0, j = 10; i < 10; i++, j--){
+	console.log(i * j);
+}
+for(var p in o){
+	console.log(p);
+}
+
+var i = 10;
+i = 'ten';
+console.log(i);
+
+var scope = 'global';
+function checkscope(){
+	var scope = 'local';
+	return scope;
+}
+console.log(checkscope());
+
+function checkscope2(){
+	scope = 'local';
+	myscope = 'local';
+	return [scope, myscope];
+}
+console.log(checkscope2());
+console.log(scope);
+console.log(myscope);
+
+var scope = 'global scope';
+function checkscope3(){
+	var scope = 'local scope';
+	function nested(){
+		var scope = 'nested scope';
+		return scope;
+	}
+	return nested;
+}
+console.log(checkscope3());
+
+function test(o){
+	var i = 0;
+	if(typeof 0 == 'object'){
+		var j = 0;
+		for(var k = 0; k < 10; k++){
+			console.log(k);
+		}
+		console.log(k);
+	}
+	console.log(j);
+}
+
+var scope = 'global';
+function f(){
+	console.log(scope);
+	var scope = 'local';
+	console.log(scope);
+}
+
+var truevar = 1;
+fakevar = 2;
+this.fakevar2 = 3;
+delete truevar;
+delete fakevar;
+delete fakevar2;
