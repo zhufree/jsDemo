@@ -421,3 +421,6 @@ s = JSON.stringify(o);
 console.log(s);
 p = JSON.parse(s);
 console.log(p);
+
+exports.union = union;
+exports.extend = extend;
