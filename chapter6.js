@@ -8,7 +8,7 @@ var point2 = {
     y: point.y
 };
 var book = {
-    "main title": 'Jacascript',
+    "main title": 'Javascript',
     'sub-title':'The Definitive Guide',
     "for": 'all audience',
     author: {
@@ -424,3 +424,4 @@ console.log(p);
 
 exports.union = union;
 exports.extend = extend;
+exports.inherit = inherit;
